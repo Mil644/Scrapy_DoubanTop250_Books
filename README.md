@@ -22,3 +22,16 @@ Scrapy 2.x
 正则表达式（re）
 
 http.cookies（用于解析 Cookie 字符串）
+### 项目结构
+```text
+douban_top250_full/
+├── douban_top250_full/
+│   ├── spiders/
+│   │   └── top250_full.py          # 爬虫主逻辑
+│   ├── items.py                     # 定义 Item 结构
+│   ├── middlewares.py                # 中间件（可选）
+│   ├── pipelines.py                  # 管道（可选）
+│   └── settings.py                   # 项目配置
+├── README.md                         # 本文件
+└── scrapy.cfg                         # Scrapy 配置文件
+└── top250_books.csv                   # 输出示例
